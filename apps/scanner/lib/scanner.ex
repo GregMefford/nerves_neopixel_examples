@@ -5,16 +5,16 @@ defmodule Scanner do
   alias Nerves.IO.Neopixel
 
   # Display each "frame" on the NeoPixel strip for this many milliseconds
-  @frame_delay = 5
+  @frame_delay 5
 
   # How many NeoPixels are in the strip
-  @pixel_count = 72
+  @pixel_count 72
 
   # GPIO pin the NeoPixel strip is connected to (probably 18 for Raspberry Pi)
-  @gpio_pin = 18
+  @gpio_pin 18
 
   def start(_type, _args) do
-    {:ok, pid} - Neopixel.setup(pin: @gpio_pin, count: @pixel_count)
+    {:ok, pid} = Neopixel.setup(pin: @gpio_pin, count: @pixel_count)
     scan(pid)
   end
 

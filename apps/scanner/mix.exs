@@ -15,10 +15,16 @@ defmodule Scanner.Mixfile do
   end
 
   def application do
-    [applications: [:nerves_io_neopixel]]
+    [
+      applications: [:nerves_io_neopixel],
+      mod: {Scanner, []}
+    ]
   end
 
   defp deps do
-    [{:nerves_io_neopixel, "~> 0.1.0"}]
+    [
+      {:nerves_io_neopixel, "~> 0.1.0"},
+      {:exrm, "~> 0.15.0"}
+    ]
   end
 end
