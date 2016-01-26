@@ -3,7 +3,7 @@ defmodule Scanner.Mixfile do
 
   def project do
     [app: :scanner,
-     version: "0.0.1",
+     version: "0.1.0",
      build_path: "../../_build",
      config_path: "../../config/config.exs",
      deps_path: "../../deps",
@@ -16,15 +16,15 @@ defmodule Scanner.Mixfile do
 
   def application do
     [
-      applications: [:nerves_io_neopixel],
+      applications: [:nerves, :nerves_io_neopixel],
       mod: {Scanner, []}
     ]
   end
 
   defp deps do
     [
-      {:nerves_io_neopixel, "~> 0.1.0"},
-      {:exrm, "~> 0.15.0"}
+      {:nerves_io_neopixel, "~> 0.2.0"},
+      {:nerves, github: "nerves-project/nerves"}
     ]
   end
 end
