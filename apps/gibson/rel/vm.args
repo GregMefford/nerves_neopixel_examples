@@ -1,0 +1,10 @@
+## Name of the node
+-sname gibson
+
+## Cookie for distributed erlang
+-setcookie god
+
+## Start the Elixir shell
+-noshell
+-user Elixir.IEx.CLI
+-extra --no-halt

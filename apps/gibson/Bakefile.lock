@@ -1,0 +1,1 @@
+{targets,[{rpi,[{'nerves/rpi',<<"0.1.0">>}]}]}.
