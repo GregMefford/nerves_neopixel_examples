@@ -3,6 +3,7 @@ defmodule Gibson do
 
   use Application
   alias Nerves.IO.Neopixel
+  alias Nerves.IO.Ethernet
 
   # Display each "frame" on the NeoPixel strip for this many milliseconds
   @frame_delay 500

@@ -16,7 +16,7 @@ defmodule Scanner.Mixfile do
 
   def application do
     [
-      applications: [:nerves, :nerves_io_neopixel, :crypto],
+      applications: [:nerves, :nerves_io_neopixel],
       mod: {Gibson, []}
     ]
   end
